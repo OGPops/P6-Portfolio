@@ -25,6 +25,6 @@ db.users.hasMany(db.works, {as: "works"})
 db.works.belongsTo(db.users, {
 	foreignKey: 'userId',
 	as: 'user'
-});
+}); 
 
 module.exports = db;
